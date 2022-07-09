@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Card } from 'react-bootstrap'
 
-const Main = () => {
+const Main = (props) => {
+    useEffect(() => {
+        console.log(props.card_Data)
+    })
+    
     const Value_Data = [
         {
             title: "WordPress Integration & Customization",
@@ -28,53 +32,50 @@ const Main = () => {
             details: "We manage the entire migration process, from coding to content, of your existing website to WordPress with zero downtime, allowing you to take advantage of all advanced functionality."
         },
     ]
-
+    
+    
+    
     return (
         <div>
             <div className='pages_ser_main'>
                 <div className='service_us_image'>
                     <div className=' text-center text-light'>
-                        <h1>WordPress</h1>
-                        <p>Vision Infotech is the one-stop destination that addresses all your technological needs to scale and grow your business.
-                            <br />Our mission is simple – YOUR GROWTH.</p>
+                        <h1>{props.language_Name}</h1>
                     </div>
                 </div>
                 <div className='container'>
                     <div className='d-flex flex-column align-items-center text-center mt-5'>
-                        <h2>Extend your reach with innovation</h2>
+                        <h2>{props.h_1}</h2>
                         <span className='heading_border'></span>
                         <p className='pt-3 text-center'>
-                            We deliver world-class WordPress web development services to enterprises, small businesses, government organizations, and startups who want to create customized WordPress websites or plan to migrate their existing website. To keep you ahead of the competition, Vision Infotech creates interactive and professional websites focused on the client’s specifications and ideology.
+                            {props.d_1}
                         </p>
 
-                        <h2 className='mt-5'>What We Do?</h2>
+                        <h2 className='mt-5'>{props.h_2}</h2>
                         <span className='heading_border'></span>
                         <p className='pt-3 text-center'>
-                            Scaling business to new heights with MS SQL Database Development Services.
+                        {props.d_1}
                         </p>
                     </div>
-
-                    <div className='row'>
-                        <div className='col-12 col-lg-6'>
-                            <div className='row'>
-                                {
-                                    Value_Data.map((e) => {
-                                        return (
-                                            <div className='col-12 col-md-6 col-lg-4'>
-                                                <Card className='my-4 services_card text-muted'>
-                                                    <Card.Body>
-                                                        <Card.Title>{e.title}</Card.Title>
-                                                        <Card.Text className='text-muted'>
-                                                            {e.details}
-                                                        </Card.Text>
-                                                    </Card.Body>
-                                                </Card>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
+                    <div className='row d-flex'>
+                        <div className='row'>
+                            {
+                                props.card_Data.map((e) => {
+                                    return (
+                                        <div className='col-12 col-md-6 col-lg-4'>
+                                            <Card className='my-4 services_card text-muted'>
+                                                <Card.Body>
+                                                    <Card.Title>{e.title}</Card.Title>
+                                                    <Card.Text className='text-muted'>
+                                                        {e.details}
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div> 
                     </div>
                 </div>
             </div>

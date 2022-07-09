@@ -5,49 +5,60 @@ const Services = () => {
     const frontend = [
         {
             image: "/images/language-images/Wordpress.png",
-            name: "Wordpress"
+            name: "Wordpress",
+            path: "/services/wordpress"
         },
         {
             image: "/images/language-images/ajax.jpg",
-            name: "Ajax"
+            name: "Ajax",
+            path: "/services/ajax"
         },
         {
             image: "/images/language-images/bootstrap.png",
-            name: "Bootstrap"
+            name: "Bootstrap",
+            path: "/services/bootstrap"
         },
         {
             image: "/images/language-images/React.png",
-            name: "React"
+            name: "React",
+            path: "/services/react"
         },
         {
             image: "/images/language-images/vue.png",
-            name: "Vue JS"
+            name: "Vue JS",
+            path: "/services/vue"
         },
         {
             image: "/images/language-images/anguler.png",
-            name: "Angula"
+            name: "Angular",
+            path: "/services/anguler"
         }
     ]
     const backend = [
         {
             image: "/images/language-images/NET.png",
-            name: ".NET"
+            name: ".NET",
+            path:"/services/net"
         },
         {
             image: "/images/language-images/mysql.png",
-            name: "MY SQL"
+            name: "MY SQL",
+            path:"/services/mysql"
         },
         {
             image: "/images/language-images/Wordpress.png",
-            name: "Wordpress"
+            name: "Wordpress",
+            path:"/services/wordpress"
         },
         {
             image: "/images/language-images/mongodb.png",
-            name: "Mongo DB"
+            name: "Mongo DB",
+            path:"/services/mongodb"
         },
         {
             image: "/images/language-images/mssql.svg",
-            name: "MS SQL"
+            name: "MS SQL",
+            path:"/services/mssql"
         }
     ]
     const mobility = [
@@ -111,7 +122,7 @@ const Services = () => {
                                                             {/* <Card.Text>
                                                             {e.details}
                                                         </Card.Text> */}
-                                                            <Link to="/services/worpress" variant="primary">More</Link>
+                                                            <Link to={e.path} variant="primary">More</Link>
                                                         </Card.Body>
                                                     </Card>
                                                 </div>
@@ -131,7 +142,7 @@ const Services = () => {
                                                             {/* <Card.Text>
                                                             {e.details}
                                                         </Card.Text> */}
-                                                            <Button variant="primary">More</Button>
+                                                            <Link to={e.path} variant="primary">More</Link>
                                                         </Card.Body>
                                                     </Card>
                                                 </div>

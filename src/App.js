@@ -12,6 +12,13 @@ import Bootstrap from './Components/Service_Pages/Bootstrap';
 import ReactLen from './Components/Service_Pages/ReactLen';
 import Veu from './Components/Service_Pages/Vue';
 import Net from './Components/Service_Pages/Net';
+import MySQL from './Components/Service_Pages/MySQL';
+import MongoDB from './Components/Service_Pages/MongoDB';
+import MsSQL from './Components/Service_Pages/MsSQL';
+import IOS from './Components/Service_Pages/IOS';
+import Flutter from './Components/Service_Pages/Flutter';
+import Android from './Components/Service_Pages/Android';
+import Contact_Us from './Components/Contact_Us';
 
 function App() {
   return (
@@ -21,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about_us" element={<About_us />} />
+          <Route path="/contact_us" element={<Contact_Us />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/wordpress" element={<Wordperess />} />
           <Route path="/services/ajax" element={<Ajex />} />
@@ -28,6 +36,12 @@ function App() {
           <Route path="/services/react" element={<ReactLen />} />
           <Route path="/services/vue" element={<Veu />} />
           <Route path="/services/net" element={<Net />} />
+          <Route path="/services/MySQL" element={<MySQL />} />
+          <Route path="/services/MongoDB" element={<MongoDB />} />
+          <Route path="/services/MsSQL" element={<MsSQL />} />
+          <Route path="/services/iOS" element={<IOS />} />
+          <Route path="/services/Flutter" element={<Flutter />} />
+          <Route path="/services/Android" element={<Android />} />
         </Routes>
         <Footer />
       </BrowserRouter>

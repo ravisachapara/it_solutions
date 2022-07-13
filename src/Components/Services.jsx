@@ -38,41 +38,44 @@ const Services = () => {
         {
             image: "/images/language-images/NET.png",
             name: ".NET",
-            path:"/services/net"
+            path: "/services/net"
         },
         {
             image: "/images/language-images/mysql.png",
             name: "MY SQL",
-            path:"/services/mysql"
+            path: "/services/MySQL"
         },
         {
             image: "/images/language-images/Wordpress.png",
             name: "Wordpress",
-            path:"/services/wordpress"
+            path: "/services/wordpress"
         },
         {
             image: "/images/language-images/mongodb.png",
             name: "Mongo DB",
-            path:"/services/mongodb"
+            path: "/services/MongoDB"
         },
         {
             image: "/images/language-images/mssql.svg",
             name: "MS SQL",
-            path:"/services/mssql"
+            path: "/services/MsSQL"
         }
     ]
     const mobility = [
         {
             image: "/images/language-images/ios.png",
-            name: "iOS"
+            name: "IOS",
+            path: "/services/iOS"
         },
         {
             image: "/images/language-images/flutter.png",
-            name: "Flutter"
+            name: "Flutter",
+            path: "/services/Flutter"
         },
         {
             image: "/images/language-images/android.png",
-            name: "Android"
+            name: "Android",
+            path: "/services/Android"
         }
     ]
 
@@ -119,10 +122,9 @@ const Services = () => {
                                                         <Card.Img variant="top" src={e.image} className='card_img' />
                                                         <Card.Body>
                                                             <Card.Title>{e.name}</Card.Title>
-                                                            {/* <Card.Text>
-                                                            {e.details}
-                                                        </Card.Text> */}
-                                                            <Link to={e.path} variant="primary">More</Link>
+                                                            <div>
+                                                                <Link to={e.path} className="primary_btn_service">More</Link>
+                                                            </div>
                                                         </Card.Body>
                                                     </Card>
                                                 </div>
@@ -142,7 +144,9 @@ const Services = () => {
                                                             {/* <Card.Text>
                                                             {e.details}
                                                         </Card.Text> */}
-                                                            <Link to={e.path} variant="primary">More</Link>
+                                                            <div>
+                                                                <Link to={e.path} className="primary_btn_service">More</Link>
+                                                            </div>
                                                         </Card.Body>
                                                     </Card>
                                                 </div>
@@ -162,7 +166,9 @@ const Services = () => {
                                                             {/* <Card.Text>
                                                             {e.details}
                                                         </Card.Text> */}
-                                                            <Button variant="primary">More</Button>
+                                                            <div>
+                                                                <Link to={e.path} className="primary_btn_service">More</Link>
+                                                            </div>
                                                         </Card.Body>
                                                     </Card>
                                                 </div>

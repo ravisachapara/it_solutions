@@ -7,65 +7,80 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Why_Choose = () => {
     const frontend = [
         {
-            image: "/images/f1.png",
-            name: "React"
+            image: "/images/language-images/Wordpress.png",
+            name: "Wordpress",
+            path: "/services/wordpress"
         },
         {
-            image: "/images/f2.png",
-            name: "Wordpress"
+            image: "/images/language-images/ajax.jpg",
+            name: "Ajax",
+            path: "/services/ajax"
         },
         {
-            image: "/images/f3.png",
-            name: "Ajax"
+            image: "/images/language-images/bootstrap.png",
+            name: "Bootstrap",
+            path: "/services/bootstrap"
         },
         {
-            image: "/images/f4.jpg",
-            name: "Vue JS"
+            image: "/images/language-images/React.png",
+            name: "React",
+            path: "/services/react"
         },
         {
-            image: "/images/f5.jpg",
-            name: "Angular"
+            image: "/images/language-images/vue.png",
+            name: "Vue JS",
+            path: "/services/vue"
         },
         {
-            image: "/images/f6.jpg",
-            name: "React"
+            image: "/images/language-images/anguler.png",
+            name: "Angular",
+            path: "/services/anguler"
         }
     ]
     const backend = [
         {
-            image: "/images/S1.jpg",
-            name: ".NET"
+            image: "/images/language-images/NET.png",
+            name: ".NET",
+            path:"/services/net"
         },
         {
-            image: "/images/S2.jpg",
-            name: "MY SQL"
+            image: "/images/language-images/mysql.png",
+            name: "MY SQL",
+            path:"/services/mysql"
         },
         {
-            image: "/images/S3.jpg",
-            name: "WOrdpress"
+            image: "/images/language-images/Wordpress.png",
+            name: "Wordpress",
+            path:"/services/wordpress"
         },
         {
-            image: "/images/S4.jpg",
-            name: "Mongo DB"
+            image: "/images/language-images/mongodb.png",
+            name: "Mongo DB",
+            path:"/services/mongodb"
+        },
+        {
+            image: "/images/language-images/mssql.svg",
+            name: "MS SQL",
+            path:"/services/mssql"
         }
     ]
     const mobility = [
         {
-            image: "/images/S1.jpg",
+            image: "/images/language-images/ios.png",
             name: "iOS"
         },
         {
-            image: "/images/S2.jpg",
+            image: "/images/language-images/flutter.png",
             name: "Flutter"
         },
         {
-            image: "/images/S3.jpg",
+            image: "/images/language-images/android.png",
             name: "Android"
         }
     ]
     
     let options = {
-        loop: true,
+        loop: false,
         margin:10,
         // nav:true,
         // navText: ["Prev", "Next"],
@@ -225,7 +240,7 @@ const Why_Choose = () => {
                                         </OwlCarousel>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
-                                        <OwlCarousel items={5} className='owl-theme' loop margin={10} nav={false}>
+                                        <OwlCarousel className='owl-theme' {...options}>
                                             {backend.map((e) => {
                                                 return (
                                                     <div className='item'>
@@ -236,7 +251,7 @@ const Why_Choose = () => {
                                         </OwlCarousel>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
-                                        <OwlCarousel items={5} className='owl-theme' loop margin={10} nav={false}>
+                                        <OwlCarousel className='owl-theme' {...options}>
                                             {mobility.map((e) => {
                                                 return (
                                                     <div className='item'>

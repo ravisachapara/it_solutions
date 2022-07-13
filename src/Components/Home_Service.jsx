@@ -57,7 +57,7 @@ const Home_Service = () => {
                                     <Card.Text>
                                         {e.details}
                                     </Card.Text>
-                                    <Button variant="primary">More</Button>
+                                    <Button className='primary_btn' >More</Button>
                                 </Card.Body>
                             </Card>
                         </div>

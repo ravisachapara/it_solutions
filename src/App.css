@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: #f74883;
-    --second-color: #712cd5;
+    --primary-color: #113e68;
+    --second-color: #FB5343;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
     border: none;
 }
 .primary_btn:hover{
-    background-color: #113e68;
+    background-color: var(--primary-color);
     color: white;
     border: none;
 }
@@ -39,8 +39,9 @@ html {
 a{
     text-decoration: none;
 }
-
-
+.nav-link{
+    cursor: pointer;
+}
 .second_heading {
     border-bottom: 3px solid var(--primary-color);
 }
@@ -52,7 +53,6 @@ a{
 .css-6hp17o-MuiList-root-MuiMenu-list {
     width: 1000px;
 }
-
 .mainLogo {
     width: 150px;
 }
@@ -81,20 +81,18 @@ a{
 
 /* SLIDER */
 .hero-bg-img {
+    margin-top: 75px;
     background-image: url("../public/images/background-1.jpg");
 }
-
 .hero-slide-img {
     width: 50%;
     padding: 20px 0 20px 0;
 }
-
 .hero-slide-img>img {
     width: 65% !important;
 }
-
 .hero-slide-text {
-    background-color: var(--second-color);
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -139,8 +137,9 @@ a{
 }
 
 .com_pro_card>.card-body>h1 {
-    color: var(--primary-color);
-    font-weight: 700;
+    color: var(--second-color);
+    font-weight: 600;
+    font-size: 60px;
 }
 
 .com_pro_card>.card-body>.card-title {
@@ -301,6 +300,39 @@ a{
     transition: 1s;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
+
+/* PROTFOLIO */
+.protfolio .card{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+}
+
+
+/* TESTIMONIALS */
+.testimonials_image{
+    background-image: url("../public/images/clients-testimonials.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    padding: 200px 0 200px 0;
+}
+.testimonials_card .card{
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+}
+.testimonials_card img{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+/* GET IN TOUCH */
+.getInTouch_part-2{
+    background-image: url("../public/images/bg1.jpg");
+}
+.getInTouch_part-2 .card{
+    background-color: transparent;
+    background-position: center;
+}
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 480px) {

@@ -1,5 +1,6 @@
 import { Card } from 'react-bootstrap'
 import React from 'react'
+import CountUp from 'react-countup';
 
 const Completed_Project = () => {
     return (
@@ -11,10 +12,10 @@ const Completed_Project = () => {
                         <p className='pb-4'>If you want to grow as a business in the best and fastest possible way, you need a premium software development solution that you can count on.</p>
                     </div>
                     <div className='row'>
-                        <div className='col-12 col-md-6 col-lg-4'>
+                        <div data-aos="flip-left" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                             <Card className='com_pro_card text-start m-3 cur_pointer'>
                                 <Card.Body className='p-5'>
-                                    <h1>258+</h1>
+                                    <h1><CountUp end={255} duration={3}/></h1>
                                     <Card.Title>Completed Projects</Card.Title>
                                     <Card.Text>
                                         We have over 258 projects under our belt that we’ve completed for very satisfied clients.
@@ -22,10 +23,10 @@ const Completed_Project = () => {
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div className='col-12 col-md-6 col-lg-4'>
+                        <div data-aos="flip-left" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                             <Card className='com_pro_card text-start m-3 cur_pointer'>
                                 <Card.Body className='p-5'>
-                                    <h1>30+</h1>
+                                    <h1><CountUp end={30} duration={3}/></h1>
                                     <Card.Title>Running Projects</Card.Title>
                                     <Card.Text>
                                         We are currently working on over 45 projects of various types. Our team has enough bandwidth to handle multiple projects simultaneously.
@@ -33,10 +34,10 @@ const Completed_Project = () => {
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div className='col-12 col-md-6 col-lg-4'>
+                        <div data-aos="flip-left" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                             <Card className='com_pro_card text-start m-3 cur_pointer'>
                                 <Card.Body className='p-5'>
-                                    <h1>50+</h1>
+                                    <h1><CountUp end={55} duration={3}/></h1>
                                     <Card.Title>Clients</Card.Title>
                                     <Card.Text>
                                         We have over 78 clients across many sectors. We work with multiple businesses of different types and sizes.

@@ -1,4 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import './App.css';
 import Home from './Components/Home';
 import SubHeader from './Components/SubHeader';
@@ -19,8 +23,17 @@ import IOS from './Components/Service_Pages/IOS';
 import Flutter from './Components/Service_Pages/Flutter';
 import Android from './Components/Service_Pages/Android';
 import Contact_Us from './Components/Contact_Us';
+import { useEffect } from 'react';
+import Anguler from './Components/Service_Pages/Anguler';
+import Protfolio from './Components/Protfolio';
+import Testimonials from './Components/Testimonials';
+import GetInTouch from './Components/GetInTouch';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <BrowserRouter>
@@ -30,11 +43,17 @@ function App() {
           <Route path="/about_us" element={<About_us />} />
           <Route path="/contact_us" element={<Contact_Us />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/protfolio" element={<Protfolio />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/getInTouch" element={<GetInTouch />} />
+          
+          
           <Route path="/services/wordpress" element={<Wordperess />} />
           <Route path="/services/ajax" element={<Ajex />} />
           <Route path="/services/bootstrap" element={<Bootstrap />} />
           <Route path="/services/react" element={<ReactLen />} />
           <Route path="/services/vue" element={<Veu />} />
+          <Route path="/services/anguler" element={<Anguler />} />
           <Route path="/services/net" element={<Net />} />
           <Route path="/services/MySQL" element={<MySQL />} />
           <Route path="/services/MongoDB" element={<MongoDB />} />

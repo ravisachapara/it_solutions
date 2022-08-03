@@ -52,7 +52,7 @@ const About_us = () => {
                     </div>
                     <div className='row'>
                         <div className='d-flex justify-content-center my-4'>
-                            <Card style={{ width: '18rem' }}>
+                            <Card data-aos="zoom-in" data-aos-duration='700' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="/images/testimonials-1.jpg" />
                                 <Card.Body className='text-center'>
                                     <Card.Title>Hardik Jasoliya</Card.Title>
@@ -74,13 +74,15 @@ const About_us = () => {
                     </div>
                 </div>
             </div>
+            
+            {/* Our Mission */}
             <div className='our_mission my-5'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-12 col-md-6'>
+                        <div data-aos="fade-right" data-aos-duration='700' className='col-12 col-md-6'>
                             <img src='/images/mission.jpg' className='w-100'></img>
                         </div>
-                        <div className='col-12 col-md-6'>
+                        <div data-aos="fade-left" data-aos-duration='700' className='col-12 col-md-6'>
                             <div className='our_mission_details d-flex flex-column align-items-start'>
                                 <h1 className='second_heading'>Our Mission</h1>
                                 <p className='text-muted'>To accelerate your business’s growth with a wide variety of technology solutions. Yes, your growth is our vision. Established in 2012, Vision Infotech is unifying its business domain expertise, technical proficiency, and vast knowledge of the latest industrial developments to create a future-ready business for you.</p>
@@ -105,7 +107,7 @@ const About_us = () => {
                         {
                             Value_Data.map((e) => {
                                 return (
-                                    <div className='col-12 col-md-6 col-lg-4'>
+                                    <div data-aos="zoom-in" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                                         <Card className='py-4 my-4 our_vision_card'>
                                             <Card.Img variant="top" src={e.img} className='card_img mx-3' />
                                             <Card.Body>

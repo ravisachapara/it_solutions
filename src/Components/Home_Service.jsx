@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
-
 const Home_Service = () => {
 
     const service_data = [
@@ -36,7 +35,6 @@ const Home_Service = () => {
             details: "Giving your customers a seamless experience overall, from start to check out is vital. This includes payments. Payment gateways are crucial to making it easy for the customer to make payments instantly.",
         },
     ]
-
     return (
         <div className='container pt-5'>
             <div className='d-flex flex-column align-items-center text-center'>
@@ -49,7 +47,7 @@ const Home_Service = () => {
             <div className='row'>
                 {service_data.map((e) => {
                     return (
-                        <div className='col-12 col-md-6 col-lg-4'>
+                        <div data-aos="zoom-in" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                             <Card className='service_card py-4 m-3'>
                                 <Card.Img variant="top" src={e.image} className='card_img' />
                                 <Card.Body>

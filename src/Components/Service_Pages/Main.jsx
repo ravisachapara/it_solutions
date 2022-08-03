@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Card } from 'react-bootstrap'
+import GetInTouch from '../GetInTouch'
 
 const Main = (props) => {
    
@@ -31,7 +32,7 @@ const Main = (props) => {
                                 props.card_Data.map((e) => {
                                     return (
                                         <div className='col-12 col-md-6 col-lg-4'>
-                                            <Card className='my-4 services_card text-muted'>
+                                            <Card data-aos="zoom-in" data-aos-duration='700' className='my-4 services_card text-muted'>
                                                 <Card.Body>
                                                     <Card.Title>{e.title}</Card.Title>
                                                     <Card.Text className='text-muted'>
@@ -45,6 +46,7 @@ const Main = (props) => {
                             }
                         </div> 
                     </div>
+                    <GetInTouch />
                 </div>
             </div>
         </div>

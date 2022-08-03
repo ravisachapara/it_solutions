@@ -32,7 +32,7 @@ const Anguler = () => {
     return (
         <Main 
             card_Data = {card_Data}
-            language_Name = "WordPress"
+            language_Name = "Anguler"
             h_1 = "Extend your reach with innovation"
             d_1 = "We deliver world-class WordPress web development services to enterprises, small businesses, government organizations, and startups who want to create customized WordPress websites or plan to migrate their existing website. To keep you ahead of the competition, Vision Infotech creates interactive and professional websites focused on the client’s specifications and ideology."
             h_2 = "What We Do?"

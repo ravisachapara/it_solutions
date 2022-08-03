@@ -118,7 +118,7 @@ const Services = () => {
                                             return (
 
                                                 <div className='col-12 col-md-6 col-lg-4'>
-                                                    <Card className='main_service_card service_card py-4 m-3'>
+                                                    <Card data-aos="zoom-in" data-aos-duration='700' className='main_service_card service_card py-4 m-3'>
                                                         <Card.Img variant="top" src={e.image} className='card_img' />
                                                         <Card.Body>
                                                             <Card.Title>{e.name}</Card.Title>
@@ -137,13 +137,10 @@ const Services = () => {
                                         {backend.map((e) => {
                                             return (
                                                 <div className='col-12 col-md-6 col-lg-4'>
-                                                    <Card className='main_service_card service_card py-4 m-3'>
+                                                    <Card data-aos="zoom-in" data-aos-duration='700' className='main_service_card service_card py-4 m-3'>
                                                         <Card.Img variant="top" src={e.image} className='card_img' />
                                                         <Card.Body>
                                                             <Card.Title>{e.name}</Card.Title>
-                                                            {/* <Card.Text>
-                                                            {e.details}
-                                                        </Card.Text> */}
                                                             <div>
                                                                 <Link to={e.path} className="primary_btn_service">More</Link>
                                                             </div>
@@ -159,13 +156,10 @@ const Services = () => {
                                         {mobility.map((e) => {
                                             return (
                                                 <div className='col-12 col-md-6 col-lg-4'>
-                                                    <Card className='main_service_card service_card py-4 m-3'>
+                                                    <Card data-aos="zoom-in" data-aos-duration='700' className='main_service_card service_card py-4 m-3'>
                                                         <Card.Img variant="top" src={e.image} className='card_img' />
                                                         <Card.Body>
                                                             <Card.Title>{e.name}</Card.Title>
-                                                            {/* <Card.Text>
-                                                            {e.details}
-                                                        </Card.Text> */}
                                                             <div>
                                                                 <Link to={e.path} className="primary_btn_service">More</Link>
                                                             </div>

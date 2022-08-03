@@ -1,20 +1,21 @@
 import React from 'react'
 import { Card, Col, Nav, Row, Tab } from 'react-bootstrap'
 import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Link } from 'react-router-dom';
 
 const Why_Choose = () => {
     const frontend = [
         {
             image: "/images/language-images/Wordpress.png",
             name: "Wordpress",
-            path: "/services/wordpress"
+            path: "/services/wordpress",
         },
         {
             image: "/images/language-images/ajax.jpg",
             name: "Ajax",
-            path: "/services/ajax"
+            path: "/services/ajax",
         },
         {
             image: "/images/language-images/bootstrap.png",
@@ -67,15 +68,18 @@ const Why_Choose = () => {
     const mobility = [
         {
             image: "/images/language-images/ios.png",
-            name: "iOS"
+            name: "iOS",
+            path: "/services/iOS"
         },
         {
             image: "/images/language-images/flutter.png",
-            name: "Flutter"
+            name: "Flutter",
+            path: "/services/Flutter"
         },
         {
             image: "/images/language-images/android.png",
-            name: "Android"
+            name: "Android",
+            path: "/services/Android"
         }
     ]
     
@@ -109,7 +113,7 @@ const Why_Choose = () => {
                             <p className='pb-4'>Software outsourcing is becoming incredibly popular. Many companies rely on trainees and interns in order to produce cost-effective software at a rapid pace. Hiring a specific human resource for a single project that you may or may not receive in the future appears to be a waste of money. Furthermore, if you know that you can get a module produced for a lesser price in another country without sacrificing quality or time, it is not a sensible idea to do so. For firms looking to save costs and focus on core business tasks, software outsourcing is a far better and smarter solution.</p>
                         </div>
                         <div className='row'>
-                            <div className='col-12 col-md-6 col-lg-4'>
+                            <div data-aos="flip-up" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                                 <Card className='why_choose_card text-start m-3 cur_pointer'>
                                     <Card.Body className='p-5'>
                                         <img src='/images/w_c.jpg'></img>
@@ -120,7 +124,7 @@ const Why_Choose = () => {
                                     </Card.Body>
                                 </Card>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-4'>
+                            <div  data-aos="flip-up" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                                 <Card className='why_choose_card text-start m-3 cur_pointer'>
                                     <Card.Body className='p-5'>
                                         <img src='/images/w_c.jpg'></img>
@@ -131,7 +135,7 @@ const Why_Choose = () => {
                                     </Card.Body>
                                 </Card>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-4'>
+                            <div  data-aos="flip-up" data-aos-duration='700' className='col-12 col-md-6 col-lg-4'>
                                 <Card className='why_choose_card text-start m-3 cur_pointer'>
                                     <Card.Body className='p-5'>
                                         <img src='/images/w_c.jpg'></img>
@@ -151,19 +155,19 @@ const Why_Choose = () => {
                         <Row className='d-flex align-items-center'>
                             <Col lg={4} className="order-2  order-lg-1">
                                 <Nav variant="pills" className="flex-column">
-                                    <Nav.Item>
+                                    <Nav.Item data-aos="fade-right" data-aos-duration='700'>
                                         <Nav.Link eventKey="first">
                                             <h3>Technology Competence</h3>
                                             <p>Our competence in various technologies empowers us to deliver scalable and robust applications, and that too, at competitive prices. Our developers continuously stay engrossed to learn new technology products and meet the ever-changing demands of our customers.</p>
                                         </Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item>
+                                    <Nav.Item data-aos="fade-right" data-aos-duration='700'>
                                         <Nav.Link eventKey="second">
                                             <h3>Ideas Paired With Passion</h3>
                                             <p>We work tirelessly to bring fresh ideas to the table every time. Our expertise in the domain and industry enables us to provide uncomplicated business solutions. At Vision Infotech, we aim at delivering ideas that lead to client success and satisfaction.</p>
                                         </Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item>
+                                    <Nav.Item data-aos="fade-right" data-aos-duration='700'>
                                         <Nav.Link eventKey="third">
                                             <h3>Agile Development</h3>
                                             <p>We are known for deploying the best practices and methods using agile development. Our client-centric approach ensures that we deliver superior results on time, within budget, and as promised.</p>
@@ -232,9 +236,9 @@ const Why_Choose = () => {
                                         <OwlCarousel className='owl-theme' {...options}>
                                             {frontend.map((e) => {
                                                 return (
-                                                    <div className='item'>
+                                                    <Link to={e.path} className='item'>
                                                         <img className='' src={e.image} />
-                                                    </div>
+                                                    </Link>
                                                 )
                                             })}
                                         </OwlCarousel>
@@ -243,9 +247,9 @@ const Why_Choose = () => {
                                         <OwlCarousel className='owl-theme' {...options}>
                                             {backend.map((e) => {
                                                 return (
-                                                    <div className='item'>
+                                                    <Link to={e.path} className='item'>
                                                         <img className='' src={e.image} />
-                                                    </div>
+                                                    </Link>
                                                 )
                                             })}
                                         </OwlCarousel>
@@ -254,9 +258,9 @@ const Why_Choose = () => {
                                         <OwlCarousel className='owl-theme' {...options}>
                                             {mobility.map((e) => {
                                                 return (
-                                                    <div className='item'>
+                                                    <Link to={e.path} className='item'>
                                                         <img className='' src={e.image} />
-                                                    </div>
+                                                    </Link>
                                                 )
                                             })}
                                         </OwlCarousel>

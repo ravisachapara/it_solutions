@@ -3,7 +3,7 @@ import { Accordion } from 'react-bootstrap'
 
 const FAQs_Related = () => {
     return (
-        <div className='FAQs_Related'>
+        <div className='FAQs_Related' id='FAQs_Related'>
             <div className='container my-5'>
                 <div className='text-center mt-5'>
                     <h1 className='p-0 m-0'>FAQs Related To Software Development</h1>
@@ -11,7 +11,7 @@ const FAQs_Related = () => {
                     <p className='pb-4'>Take a look at some of the most commonly asked questions we receive. </p>
                 </div>
                 <Accordion>
-                    <div className='row d-flex align-items-center'>
+                    <div  data-aos="fade-down" data-aos-duration='700' className='row d-flex align-items-center'>
                         <div className='col-12 col-md-6'>
                             <Accordion.Item eventKey="0" className="my-2 accordion_Border">
                                 <Accordion.Header>1. What should I look for in a software application development company?</Accordion.Header>
